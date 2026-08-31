@@ -514,7 +514,7 @@ caption {
     <div class="frame" id="starsFrame"></div>
     <h3>Recognition thresholds, from the manual</h3>
     <div class="tw" id="threshTable"></div>
-    <h3>Credits identified so far, from two of thirteen areas</h3>
+    <h3>Credits identified so far, from three of thirteen areas</h3>
     <div class="tw" id="ledgerTable"></div>
     <h3>Where Okanagan College sits against BC</h3>
     <div class="tw" id="peerTable"></div>
@@ -611,8 +611,8 @@ framework: {
   frameworkFile: "20260825 R1 Sust Plan Framework.xlsx",
   horizon: "FY2026/27 to FY2031/32",
   starsLadder: "Silver at the November 2028 submission, Gold at November 2032",
-  version: "Master v0.1, shell",
-  derived: "26 August 2026",
+  version: "Master v0.5",
+  derived: "31 August 2026",
   years: [
     { id: "Y1", fy: "FY2026/27", span: "Apr 1 2026 to Mar 31 2027", period: "Operational period 1", milestone: "November 2026, submit the STARS report for the 2025/26 performance period", submits: true },
     { id: "Y2", fy: "FY2027/28", span: "Apr 1 2027 to Mar 31 2028", period: "Operational period 1", milestone: "2027/28 STARS performance period, a data collection year", submits: false },
@@ -700,9 +700,19 @@ areas: [
   {
     n: 9, name: "Supply Chain", focus: "Operations",
     repo: "OC_09_Supply_Chain_Plan",
-    status: "In progress",
+    status: "Draft ready for review",
+    version: "Draft v1.0",
+    versionDate: "31 August 2026",
     desiredOutcome: "Supply Chain optimized and aligned with sustainability guidelines and carbon planning targets",
-    baseline: "Student driven Trash audit completed in Mar 2026"
+    baseline: "Student driven Trash audit completed in Mar 2026",
+    goal: "What Okanagan College buys and what Okanagan College throws away are both measured, and both are shrinking.",
+    outcomeTarget: "Reduce Scope 3 Category 5 waste emissions and Category 1 purchased goods emissions below a baseline that does not exist yet. Category 5 is set in Year 2 from the retendered hauling contract; Category 1 in Year 2 or 3 from Finance's recoded ledger.",
+    outcomeBase: "No baseline exists for any part of Supply Chain. The percentage is deliberately blank.",
+    leverTarget: "By 2032, reduce the divertible share of landfill bound waste from 49% to 25%, measured by composition audit on the March 2026 method.",
+    leverBase: "49% divertible, measured at Kelowna on 27 March 2026, 162 kg across nine buildings. Paper towel 19%, mixed recycling 14%, compost 8%, depot only 5%, refundable 2%.",
+    tier: "25% divertible, Recommended",
+    activities: { Y1: 15, Y2: 14, Y3: 10, Y4: 9, Y5: 9, Y6: 6 },
+    openQuestions: 14
   },
   {
     n: 10, name: "Transportation", focus: "Operations",
@@ -748,7 +758,7 @@ areas: [
 baseUrl: "https://sustainoc.github.io/",
 
 figures: [
-  { n: "2", unit: " of 13", label: "Impact areas drafted to activity level", sub: "Transportation and Organizational Structure and Funding. Supply Chain is in progress.", hero: true },
+  { n: "3", unit: " of 13", label: "Impact areas drafted and open for review", sub: "Transportation, Organizational Structure and Funding, and Supply Chain. All three are published and rolled up into the totals on this page.", hero: true },
   { n: "2", unit: " of 27", label: "Plan commitments with a named owner", sub: "Recorded in the Action Register, 13 August 2026. It gates three STARS points directly.", hero: true },
   { n: "0", unit: " of 2.0", label: "FTE that are permanent or base funded", sub: "Both sustainability positions are contract. Both expire inside Year 1, one month apart." },
   { n: "5", unit: " of 13", label: "Impact areas with no baseline in the framework", sub: "Policy, Structure, Equity, Curriculum and Applied Research have empty baseline cells." },
@@ -761,8 +771,9 @@ execThesis: "This is a six year plan across thirteen impact areas, and it pivots
 execText: [
   "Okanagan College is committing to reduce greenhouse gas emissions 80 per cent by 2050 across Scopes 1, 2 and 3, and to convert its unscored STARS Reporter standing into a Silver rating at the November 2028 submission and Gold at November 2032. Those two commitments are what this plan exists to deliver. The thirteen impact areas are the machinery.",
   "The plan is built one impact area at a time. Each area gets a brief for decision makers and a detailed plan for the people who execute it, and each is published at its own address. This master document is assembled from those briefs. It is the only place the plan can be read whole: where the STARS arithmetic is totalled, where the emissions reductions add up or fail to, where the funding envelope is one decision rather than thirteen, and where the year that is overloaded becomes visible.",
-  "Two of the thirteen are drafted to activity level today. Both are published in full through the links below. What they have already surfaced is worth stating on the front page rather than burying: Okanagan College carries thirteen impact areas on two full time equivalent positions, neither of which is permanent or base funded, and both of whose contracts expire inside the first year of this plan. Two of twenty seven plan commitments name an accountable person. Until that is fixed, three STARS points are formally blocked and everything else in this document is an intention rather than a commitment.",
-  "The plan does not claim a compliance driver it does not have. The BC consumer carbon tax was eliminated on 1 April 2025 and most of what this plan addresses sits outside the province's Carbon Neutral Government boundary. The case for acting is standing among peers, readiness for boundaries that are tightening, and the fact that measured evidence beats assertion when a rating is being scored by somebody else."
+  "Three of the thirteen are drafted to activity level today, all three are published in full through the links below, and all three are rolled up into the totals on this page. What they have already surfaced is worth stating on the front page rather than burying: Okanagan College carries thirteen impact areas on two full time equivalent positions, neither of which is permanent or base funded, and both of whose contracts expire inside the first year of this plan. Two of twenty seven plan commitments name an accountable person. Until that is fixed, three STARS points are formally blocked and everything else in this document is an intention rather than a commitment.",
+  "The plan does not claim a compliance driver it does not have. The BC consumer carbon tax was eliminated on 1 April 2025 and most of what this plan addresses sits outside the province's Carbon Neutral Government boundary. The case for acting is standing among peers, readiness for boundaries that are tightening, and the fact that measured evidence beats assertion when a rating is being scored by somebody else.",
+  "One possible exception has surfaced, and it is unconfirmed rather than established. Supply Chain reports a Regional District of North Okanagan commercial food waste regulation, enforced since January 2023, pricing food waste at $265 a tonne against $120 for ordinary refuse. If it binds Okanagan College's Vernon food service, it is the only enforced compliance requirement anywhere in this plan, and it appears nowhere in OC's own records. Confirming that is one of the decisions listed below, not a fact stated here."
 ],
 
 execAside: {
@@ -776,7 +787,7 @@ execAside: {
 
 areasSub: "Four focus areas, thirteen impact areas, from the R1 framework. Click a name in the map to jump to that area and open it. The arrow at the end of a row is the only thing that leaves this page.",
 
-starsThesis: "The honest answer today is that nobody can say whether Silver clears, because the score is a percentage and only two of thirteen areas have mapped their credits.",
+starsThesis: "The honest answer today is that nobody can say whether Silver clears, because the score is a percentage and this ledger so far carries three of thirteen areas.",
 
 starsFrame: "A STARS score is not a sum of points. The manual is explicit: the overall score is the percentage of points earned across the credits that apply to the institution, with non applicable credits leaving the denominator rather than scoring zero, plus up to 10 Innovation and Leadership bonus points added on top. Silver is 45 per cent, not 45 points. This matters for how this plan is built: a credit ruled not applicable, like the two investment credits below the USD $1 million threshold, improves the score by shrinking the denominator, while a credit left unattempted does not. The plan therefore has to be explicit about applicability, not only about performance.",
 
@@ -794,6 +805,13 @@ ledger: [
   ["Transportation", "OP 15", "Air Travel", "2", "Applicability unconfirmed against the USD $50,000 threshold", "unc"],
   ["Transportation", "OP 6.1", "Scope 3 commuting", "0.5", "Unquantified. First figure lands around September 2026", "none"],
   ["Transportation", "OP 6.1", "Scope 3 business travel", "0.5", "Unquantified. A Year 2 activity with Finance", "none"],
+  ["Supply Chain", "OP 7", "Dining Service Procurement", "8", "Feed BC reports about 30% locally sourced produce, meat and dairy at OC, but OC does not track the figure itself", "part"],
+  ["Supply Chain", "OP 8", "Food Recovery", "2", "The Earth Tub takes pre consumer scraps from the culinary teaching kitchen, so pre consumer diversion looks defensible", "part"],
+  ["Supply Chain", "OP 9", "Sustainable Procurement System", "7", "Vendor code of conduct in draft, sustainability enters tenders ad hoc, no appraisal weighting set", "part"],
+  ["Supply Chain", "OP 10", "Purchased Goods", "4", "Blocked on spend by category from Finance, the same unlock as the Category 1 carbon baseline", "block"],
+  ["Supply Chain", "OP 11", "Materials Management", "4", "The cheapest four points in the plan, largely documentation of what already runs", "near"],
+  ["Supply Chain", "OP 12", "Waste Generation and Recovery", "5", "Blocked on weights until the 2027 hauling retender, though the manual permits sample based estimation", "block"],
+  ["Supply Chain", "OP 6.1", "Scope 3, the Supply Chain share", "1.5", "Partial accounting needs one relevant activity per category; purchased food and paper are the manual's own worked example", "part"],
   ["Structure & Funding", "PA 1", "Sustainability Coordination", "1", "Likely 0.5. An office exists, no institution wide coordinating body does", "part"],
   ["Structure & Funding", "PA 2.1", "Public sustainability commitment", "2", "Unclaimed. This plan, once published, is the instrument", "open"],
   ["Structure & Funding", "PA 2.2", "Measurable sustainability objectives", "3", "Blocked on the accountable position requirement, not on the objectives", "block"],
@@ -804,7 +822,7 @@ ledger: [
   ["Structure & Funding", "IL 51", "Sustainability Projects Fund", "1 bonus", "Available at Tier 2 or above", "open"]
 ],
 
-ledgerNote: "Thirteen credits mapped from two impact areas. Eleven areas have not yet mapped theirs, so this table is a fragment and not a score. Point values verified against the AASHE STARS Technical Manual version 3.0.1 and the Innovation and Leadership Credit Catalog version 3.0.1 by the two briefs. The remaining categories carry substantial weight that is not represented here: Curriculum alone is a maximum of 45 points, Energy and Climate 26, Campus Engagement 25, Public Engagement 25, Research 23, Buildings and Grounds 20, Procurement and Waste 20, Food and Dining 10.",
+ledgerNote: "Twenty credits mapped from three impact areas. Ten are not represented here, so this table is a fragment and not a score. Supply Chain alone maps 31.5 points, more than the other two areas combined, and OP 7 at 8 points is the largest single credit mapped anywhere in the plan so far. Point values verified against the AASHE STARS Technical Manual version 3.0.1 and the Innovation and Leadership Credit Catalog version 3.0.1 by the two briefs. The remaining categories carry substantial weight that is not represented here: Curriculum alone is a maximum of 45 points, Energy and Climate 26, Campus Engagement 25, Public Engagement 25, Research 23, Buildings and Grounds 20, Procurement and Waste 20, Food and Dining 10.",
 
 peers: [
   ["UVic", "Platinum", "85.74", "Dec 2023", "Active to Mar 2027"],
@@ -851,20 +869,21 @@ carbTruths: [
   ["STARS OP 6 is worth 16 points, but not evenly", "OP 6.2 and 6.3 normalize on Scopes 1 and 2 only. Scope 3 categories earn completeness points in OP 6.1 at 0.25 partial or 0.5 full each. A Scope 3 inventory is worth modest points and considerable credibility, and this plan should say so in that order."]
 ],
 
-loadSub: "Activity counts from the two impact areas drafted so far. Eleven areas are not yet counted, so these bars show a floor and not a total. Both drafted areas front load Year 1 heavily, which is the pattern to watch as the remaining eleven are written.",
+loadSub: "Activity counts from the three impact areas rolled up so far, 158 activities in total. Ten are not counted, so these bars show a floor and not a total. All three front load Year 1 heavily, 40 activities of the 158, and Year 2 is now almost as heavy at 32. Three areas of thirteen already put 72 activities into the first two years, which is the number to watch as the remaining ten are written.",
 
-moneyFrame: "Both drafted areas resolve to three tiers, and in both the tiers differ less in ambition than in dependency. They do not, however, differ in the same direction, and that is the finding worth carrying to the executive. In Transportation, more ambition means depending more on parties Okanagan College does not control: four municipalities, two regional districts, a transit authority. In Organizational Structure and Funding, more ambition means depending less on money that arrives annually from outside and cannot be carried forward, and more on decisions OC's own Finance department and Board can make. A single plan wide tier choice would therefore mean different things in different areas, which is an argument for choosing tiers area by area and reporting the total, not for choosing one number for the whole plan.",
+moneyFrame: "All three drafted areas resolve to three tiers, and in each the tiers differ less in ambition than in dependency. They do not differ along the same axis, and after three areas that is no longer a curiosity, it is the finding to carry to the executive. In Transportation, more ambition means depending more on parties Okanagan College does not control: four municipalities, two regional districts, a transit authority. In Organizational Structure and Funding, it means depending less on money that arrives annually from outside and cannot be carried forward, and more on decisions OC's own Finance department and Board can make. In Supply Chain, almost everything is within OC's own gift and the constraint is timing, not permission: the hauling contract becomes negotiable in 2027 and then closes for years, the Food, Wine and Tourism building is designed once, and Finance recodes the ledger on its own cycle. Three areas, three different axes. A single plan wide tier number would mean three different things, which is the argument for choosing tier by area and reporting the total.",
 
 tiers: [
   ["Transportation", "40%, Conservative", "45%, Recommended", "50%, Ambitious", "None at the conservative tier. End of trip facilities not yet costed at the recommended tier.", "$22,283 emissions workplan, already committed. Roughly $13,000 a year in Low Carbon Fuel Standard credits comes back once the FLO stations are registered."],
-  ["Structure & Funding", "Tier 1, Hold", "Tier 2, Recommended", "Tier 3, Ambitious", "None at any tier. The projects fund is an operating instrument, and at Tier 3 its seed capital comes from verified savings on the TRU precedent.", "The existing establishment, not costed here, plus the fund's annual seed, not yet sized."]
+  ["Structure & Funding", "Tier 1, Hold", "Tier 2, Recommended", "Tier 3, Ambitious", "None at any tier. The projects fund is an operating instrument, and at Tier 3 its seed capital comes from verified savings on the TRU precedent.", "The existing establishment, not costed here, plus the fund's annual seed, not yet sized."],
+  ["Supply Chain", "35%, Conservative", "25%, Recommended", "15%, Ambitious", "Organics infrastructure and bin restandardization per campus, neither costed. An asset management system for surplus at the upper tier, not costed. The Food, Wine and Tourism building's waste systems sit inside a project already funded.", "Organics hauling at four campuses and audits every two years, not costed. Coming back: avoided tipping and the $50 a tonne mixed load surcharge at Glenmore, not yet sized because the tonnage is unknown."]
 ],
 
 moneyText: [
-  "No plan wide capital or operating figure appears in this document, because none exists yet. Two of thirteen areas have costed anything at all, and both record most lines as not yet costed rather than estimating them. That is the correct state for a plan at this stage and it is stated rather than papered over. A plan wide envelope becomes possible when each area's tiers carry structured capital and operating values, which is a requirement of the roll up contract and not something this document can manufacture."
+  "No plan wide capital or operating figure appears in this document, because none exists yet. Three of thirteen areas are rolled up here, and all three record most lines as not yet costed rather than estimating them. That is the correct state for a plan at this stage and it is stated rather than papered over. A plan wide envelope becomes possible when each area's tiers carry structured capital and operating values, which is a requirement of the roll up contract and not something this document can manufacture."
 ],
 
-depsSub: "Assembled from the two drafted areas. This table is the beginning of the cross area dependency map, not the finished one. Its value is that it already shows the same functions carrying more than one area, which is the thing no single brief can see.",
+depsSub: "Assembled from the three areas rolled up so far. This table is the beginning of the cross area dependency map, not the finished one. Its value is what it already shows: Finance appears three times, on three unrelated questions, from three different impact areas. No single brief can see that.",
 
 deps: [
   ["Finance", "Structure & Funding", "Confirm what establishes the no carry forward rule. It decides whether a revolving fund is possible at all.", "Critical"],
@@ -873,13 +892,20 @@ deps: [
   ["Facilities", "Transportation", "Close the three named accessibility failures, reconcile the EV station and stall contradictions.", "High"],
   ["Campus Planning", "Transportation", "Liaison capacity for four municipalities and two regional districts.", "High"],
   ["Executive", "Structure & Funding", "Charter an institution wide sustainability committee and name an executive sponsor. It is the precondition for three STARS points.", "Critical"],
-  ["Every department", "All areas", "Name an accountable position against each commitment. Currently 2 of 27.", "Critical"]
+  ["Finance", "Supply Chain", "Recode the general ledger to procurement categories. It makes OP 10's four points reportable and it is the only route to a Category 1 estimate.", "Critical"],
+  ["Purchasing and Contracts", "Supply Chain", "Specify weight based reporting in the 2027 hauling retender. Four of the five OP 12 points and the whole Category 5 baseline depend on that document.", "Critical, dated"],
+  ["Capital Projects", "Supply Chain", "Designed in waste systems for the Food, Wine and Tourism building, which comes online September 2027 and is designed once.", "Critical, dated"],
+  ["Procurement", "Supply Chain", "Capacity. OC's own current state record says the department is willing and under resourced, and that becomes the binding constraint at the upper tier.", "High"],
+  ["Every department", "All areas", "Name an accountable position against each commitment. Structure and Funding records 2 of 27; Supply Chain records 0 of 63.", "Critical"]
 ],
 
-asksSub: "Rolled up from the two drafted areas. Ordered by what blocks the most, not by cost. Both areas agree on the first one, which is why it leads.",
+asksSub: "Rolled up from the three areas derived so far, ordered by what blocks the most rather than by cost. All three areas agree on the first one independently, which is why it leads. Decisions specific to a single impact area stay in that area's own brief.",
 
 asks: [
-  ["Direct that every commitment in this plan carries a named accountable position", "Board or Executive", "Currently 2 of 27. It is the cheapest action in the whole plan, it blocks three STARS points directly through PA 2.2, and both drafted areas raise it independently. Nothing else in this document is a commitment until this is done."],
+  ["Direct that every commitment in this plan carries a named accountable position", "Board or Executive", "Organizational Structure and Funding records 2 of 27. Supply Chain records 0 of 63. All three drafted areas raise this independently, which is as clear a signal as this plan is going to give you. It is the cheapest action in the document, it blocks three STARS points directly through PA 2.2, and nothing else here is a commitment until it is done."],
+  ["Direct that the 2027 hauling retender specify weight based reporting", "Executive, hard deadline", "The single highest value decision in Supply Chain and the only one in the plan with a contractual deadline rather than a preference. Four of the five points in STARS OP 12 and the entire Scope 3 Category 5 baseline depend on what that tender document says. The contract becomes negotiable in 2027 and then closes for years."],
+  ["Direct that the Food, Wine and Tourism building carry designed in waste systems", "Executive, hard deadline", "It comes online in September 2027 and a food services building is designed once. Retrofitting organics handling into a new building afterwards is the most avoidable cost anywhere in this plan, and the building's waste systems sit inside a project that is already funded."],
+  ["Ask Finance to recode the general ledger to procurement categories", "Executive", "One unlock, two returns. It makes STARS OP 10's four points reportable and it is the only route to a Scope 3 Category 1 estimate. Nothing else in the plan does two jobs at once. Note that this is the third separate thing three different impact areas need from Finance."],
   ["Make both sustainability positions permanent and base funded, inside FY2026/27", "Executive, with a deadline", "The Manager's contract ends 31 March 2027 and the Analyst's in April 2027. Neither is base funded. A decision taken after the FY2026/27 budget cycle closes cannot take effect before those dates. This is the one ask in the plan with a deadline rather than a preference."],
   ["Charter an institution wide sustainability committee and name an executive sponsor", "Executive", "It moves STARS PA 1 from 0.5 to 1.0, it is the precondition for PA 2.2's three points, and it gives cross departmental work, which is most of this plan, a place to be decided. The cost is meeting time."],
   ["Approve the STARS ladder", "Board", "Silver at the November 2028 submission, Gold at November 2032. Okanagan College holds Reporter status today, which is unscored. Seven of thirteen BC peer ratings have lapsed, so a maintained rating would be a distinguishing position rather than a catch up."],
@@ -896,12 +922,13 @@ maintText: [
 deriv: [
   ["Transportation", "BRIEF R2", "26 August 2026", "Cards, STARS ledger, tiers, dependencies, asks, year load"],
   ["Organizational Structure & Funding", "BRIEF", "25 August 2026", "Cards, STARS ledger, tiers, dependencies, asks, year load"],
+  ["Supply Chain", "BRIEF Draft v1.0", "31 August 2026", "Row, STARS ledger, tiers, dependencies, asks, year load"],
   ["R1 framework", "20260825 R1 Sust Plan Framework.xlsx", "26 August 2026, revised copy", "Desired outcomes and baselines for all thirteen, the six year spine"],
   ["STARS Technical Manual", "Version 3.0.1", "26 August 2026", "Recognition thresholds, scoring mechanism, category point maxima"],
   ["Peer register", "claude/peer_document_register.md", "26 August 2026", "BC STARS ratings, scores and expiry dates"]
 ],
 
-footNote: "Master plan, version 0.1, derived 26 August 2026 from two of thirteen impact area briefs. <b>Nothing in this document is estimated.</b> Where an Okanagan College figure does not exist it is absent and the absence is stated, in keeping with the rule carried by every impact area plan. Framework: 20260825 R1 Sust Plan Framework.xlsx, Roadmap tab. Five of thirteen baseline cells in that file are empty and are shown here as empty. Four typographical errors in the framework's own text are reproduced verbatim pending correction at source: specifc in the Training baseline, asseessment in the UNSDG's baseline, emmission in the Carbon Zero baseline, and undertaklen in the Equity and Well Being desired outcome. STARS recognition thresholds, the percentage scoring mechanism and category point maxima verified directly against the AASHE STARS Technical Manual version 3.0.1. Peer ratings and scores from the AASHE public scorecards via the SustainOC Sustainability Document Hub; per credit pages are login gated, so peer point values at credit level are not reported. Coverage limit stated rather than hidden: eleven of thirteen impact areas are not yet drafted, so every roll up on this page is a fragment and is labelled as one."
+footNote: "Master plan, version 0.5, derived 31 August 2026 from three of thirteen impact area briefs. <b>Nothing in this document is estimated.</b> Where an Okanagan College figure does not exist it is absent and the absence is stated, in keeping with the rule carried by every impact area plan. Framework: 20260825 R1 Sust Plan Framework.xlsx, Roadmap tab. Five of thirteen baseline cells in that file are empty and are shown here as empty. Four typographical errors in the framework's own text are reproduced verbatim pending correction at source: specifc in the Training baseline, asseessment in the UNSDG's baseline, emmission in the Carbon Zero baseline, and undertaklen in the Equity and Well Being desired outcome. STARS recognition thresholds, the percentage scoring mechanism and category point maxima verified directly against the AASHE STARS Technical Manual version 3.0.1. Peer ratings and scores from the AASHE public scorecards via the SustainOC Sustainability Document Hub; per credit pages are login gated, so peer point values at credit level are not reported. Coverage limit stated rather than hidden: ten of thirteen impact areas are not yet drafted, so every roll up on this page carries three of thirteen areas and is labelled as one."
 
 };
 
@@ -1139,7 +1166,8 @@ var renderSpine = function () {
     "The submission calendar sits in the Performance Measurement column of the R1 framework. It is plan level rather than impact area content, and moves to its own row when Performance Measurement is drafted."));
 
   setHTML("loadSub", esc(OC_MASTER.loadSub));
-  var live = OC_MASTER.areas.filter(isLive);
+  /* Only areas whose roll up has actually been derived carry activity counts. */
+  var live = OC_MASTER.areas.filter(function (a) { return isLive(a) && a.activities; });
   var totals = OC_MASTER.framework.years.map(function (y) {
     var t = 0;
     live.forEach(function (a) { t += (a.activities[y.id] || 0); });
@@ -1180,7 +1208,7 @@ var renderDeps = function () {
       return '<tr class="t-top"><td class="strong">' + esc(r[0]) + "</td><td>" + esc(r[1]) +
         '</td><td class="prose">' + esc(r[2]) + '</td><td class="c nw">' + esc(r[3]) + "</td></tr>";
     }).join(""),
-    "Finance appears twice, from two different areas, on two different questions. That repetition is the point of building this table at plan level."));
+    "Finance appears three times, from three different areas, on three unrelated questions: the no carry forward rule, the employee parking taxable benefit, and recoding the general ledger. Three of thirteen areas in, Finance is the single most load bearing function in this plan and nobody has told it so."));
 };
 
 /* ---- asks ---- */
